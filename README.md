@@ -10,9 +10,24 @@ Here's how to document your progress from repl.it to GitHub:
 6. Click **Save**. (In some cases, you may need to click **Save** again.)
 7. Go back to the **Git** panel, and go to the **Pane Actions** icon. It will drop down a list of actions. Then type in the *Search* bar: **Shell**.
 8. Click the **Shell** icon. It will open a terminal.
-9. Then type in the terminal `git merge origin/main --allow-unrelated-histories` so that it will merge the repl.it repository with your GitHub repository. It will open a merge message in a new window. Just close it.
+9. Then type in the terminal the following:
+
+```bash
+git pull
+git merge origin/main --allow-unrelated-histories
+```
+ so that it will merge the repl.it repository with your GitHub repository. It will open a merge message in a new window. Just close it.
+
+**<span style="color:red">NOTE:</span>** Using `git pull` will cause no tracking information for the current branch. So you need to use `git merge origin/main --allow-unrelated-histories` to merge the repl.it repository with your GitHub repository.
+
 10. Now, under the **Files** section, you can see the files that you have pulled from the GitHub repository together with the files from the repl.it repository.
 11. Proceed with your coding.
 12. After you have done your coding, go back to the **Git** panel, and add a summary of your commit in the **Commit** message box.
-13. Go back to the **Shell** icon, then type in the terminal ```git push origin main``` to push your changes to the GitHub repository. It will ask you to *Pass Github Credentials* (i.e., your GitHub username and password ) and click **Confirm for this session** to proceed.
+13. Go back to the **Shell** icon, then type in the terminal 
+```bash
+git add .
+git commit -m "Your commit message here"
+git push origin main
+```
+ so that it will add all the changes you have made, commit the changes with your commit message, and push the changes to the GitHub repository. It will ask you to *Pass Github Credentials* (i.e., your GitHub username and password ) and click **Confirm for this session** to proceed.
 14. Go to your GitHub repository, and you will see the changes you have made.
