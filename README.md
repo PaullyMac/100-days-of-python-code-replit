@@ -10,7 +10,16 @@ Here's how to document your progress from repl.it to GitHub:
 6. Click **Save**. (In some cases, you may need to click **Save** again.)
 7. Go back to the **Git** panel, and go to the **Pane Actions** icon. It will drop down a list of actions. Then type in the *Search* bar: **Shell**.
 8. Click the **Shell** icon. It will open a terminal.
-9. Then type in the terminal `git merge origin/main --allow-unrelated-histories` so that it will merge the repl.it repository with your GitHub repository. It will open a merge message in a new window. Just close it.
+9. Then type in the terminal the following:
+
+```bash
+git pull
+git merge origin/main --allow-unrelated-histories
+```
+ so that it will merge the repl.it repository with your GitHub repository. It will open a merge message in a new window. Just close it.
+
+**<span style="color:red">NOTE:</span>** Using `git pull` will cause no tracking information for the current branch. So you need to use `git merge origin/main --allow-unrelated-histories` to merge the repl.it repository with your GitHub repository.
+
 10. Now, under the **Files** section, you can see the files that you have pulled from the GitHub repository together with the files from the repl.it repository.
 11. Proceed with your coding.
 12. After you have done your coding, go back to the **Git** panel, and add a summary of your commit in the **Commit** message box.
