@@ -1,16 +1,5 @@
 entrypoint = "main.py"
-<<<<<<< HEAD
 run = "python main.py"
-=======
-<<<<<<< HEAD
-run = "python main.py"
-=======
-<<<<<<< HEAD
-=======
-run = "python main.py"
->>>>>>> origin/main
->>>>>>> origin/main
->>>>>>> 4c23d571aeac4d43f92092b878b243618aceacfc
 modules = ["python-3.10:v18-20230807-322e88b"]
 
 [nix]
@@ -21,13 +10,3 @@ language = "python3"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix"]
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
-[deployment]
-run = ["python3", "main.py"]
-deploymentTarget = "cloudrun"
->>>>>>> origin/main
->>>>>>> 4c23d571aeac4d43f92092b878b243618aceacfc
