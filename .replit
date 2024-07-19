@@ -9,4 +9,8 @@ channel = "stable-23_11"
 language = "python3"
 
 [gitHubImport]
+<<<<<<< HEAD
 requiredFiles = [".replit", "replit.nix"]
+=======
+requiredFiles = [".replit", "replit.nix"]
+>>>>>>> 11e806d042332444f5d3ff75e61036b471656c13
